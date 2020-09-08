@@ -5,7 +5,6 @@ import com.example.orderservice.common.OrderServiceConstants;
 import com.example.orderservice.exception.OrderNotFoundException;
 import com.example.orderservice.model.OrderServiceDTO;
 import com.example.orderservice.service.OrderService;
-import com.example.orderservice.util.OrderUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,9 +23,6 @@ import java.util.List;
 public class OrderServiceController {
 
     Logger log = LoggerFactory.getLogger(OrderServiceController.class);
-
-    @Autowired
-    OrderUtil orderUtil;
 
     @Autowired
     ObjectMapper objectMapper;
